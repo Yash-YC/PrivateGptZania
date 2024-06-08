@@ -1,0 +1,17 @@
+OPENAI_API_KEY: sk-..
+LLM: gpt-3.5-turbo-0125
+
+QUESTIONS:
+  - What is the name of the company?
+  - Who is the CEO of the company?
+  - What is their vacation policy?
+  - What is the termination policy?
+
+
+PROMPT_TEMPLATE: "Answer the question based only on the following context,\ 
+  from context company name ends with Inc. recognize it even if it is case sensitive,\
+  Understand context and give answer precisely,\
+  if you don't know the answer,\
+  just say that Data Not Available, don't try to make up an answer,\
+  don't make any new information which is not available into context: {context}\
+  \n\nQuestion: {question}"
